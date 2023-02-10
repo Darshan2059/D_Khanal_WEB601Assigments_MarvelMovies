@@ -1,0 +1,15 @@
+#content-card{
+  border: 1px solid black;
+  margin-bottom: 20px;
+  width:25%;
+  margin-left: 5%;
+  background-color: rgb(223, 208, 122);
+  text-align: center;
+  display: inline-block;
+}
+.image{
+  width: 50%;
+}
+.is-first {
+  border: 20px solid #000000;
+}
