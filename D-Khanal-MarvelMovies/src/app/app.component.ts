@@ -6,7 +6,7 @@ import { Content } from  './helper-files/content-interface';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'D-Khanal-MarvelMovies';
+ /* title = 'D-Khanal-MarvelMovies';
   contentItem:Content = {
     id:1,
     title:"Iron Man",
@@ -53,16 +53,36 @@ export class AppComponent {
     type:"Action",
     tags:["IronMan2", "Movie"]
   };
+  contentItem6:Content = {
+    id:6,
+    title:"Avengers: Infinity War",
+    description:"This movie shows how team of superheros try to save the planet but fails.",
+    creator:"Marvel studios",
+    imgURL:"https://cdn.marvel.com/content/1x/avengersinfinitywar_lob_mas_hlf_01_3.jpg",
+    type:"Sci-Fi",
+    tags:[]
+  };
+  contentItem7:Content = {
+    id:7,
+    title:"Avengers: Endgame",
+    description:"This movie explains how a team of superheros find a way to defeat the undefeated Thanos",
+    creator:"Marvel studios",
+    imgURL:"https://lumiere-a.akamaihd.net/v1/images/p_avengersendgame_19751_e14a0104.jpeg",
+    type:"Action",
+    tags:[]
+  };*/
 
 
-  contentArray: Content[];
+ // contentArray: Content[];
   constructor(){
-    this.contentArray = [this.contentItem];
+   /* this.contentArray = [this.contentItem];
 
     this.contentArray.push(this.contentItem2);
     this.contentArray.push(this.contentItem3);
     this.contentArray.push(this.contentItem4);
     this.contentArray.push(this.contentItem5);
+    this.contentArray.push(this.contentItem6);
+    this.contentArray.push(this.contentItem7);*/
 
   }
 }
