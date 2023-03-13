@@ -1,0 +1,35 @@
+<p>box-component works!</p>
+<div>
+  <h1>Boxes List</h1>
+  <app-box-form (boxAdded)="addBox($event)"></app-box-form>
+  <hr>
+  <div *ngFor="let box of boxes">
+    <app-box-details [box]="box"></app-box-details>
+  </div>
+</div>
+<div>
+  <h2>Add a Box</h2>
+  <form (submit)="onSubmit()">
+    <div>
+      <label for="size">Size:</label>
+      <input type="number" id="size" name="size" [(ngModel)]="box.size" min="1" max="10">
+    </div>
+    <div>
+      <label for="description">Description:</label>
+      <textarea id="description" name="description" [(ngModel)]="box.description"></textarea>
+    </div>
+    <div>
+      <label for="labelCode">Label Code:</label>
+      <input type="text" id="labelCode" name="labelCode" [(ngModel)]="box.labelCode">
+    </div>
+    <div>
+      <label for="recipient">Recipient:</label>
+      <input type="text" id="recipient" name="recipient" [(ngModel)]="box.recipient">
+    </div>
+    <div>
+      <label for="weight">Weight:</label>
+      <input type="number" id="weight" name="weight" [(ngModel)]="box.weight" step="0.1">
+    </div>
+    <button type="submit">Add Box</button>
+  </form>
+</div>

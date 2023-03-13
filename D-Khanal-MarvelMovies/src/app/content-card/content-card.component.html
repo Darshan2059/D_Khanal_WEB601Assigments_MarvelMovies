@@ -1,3 +1,16 @@
-<p>content-card works!</p>
-<div id="MyMarvelMovies" ></div>
+<div class="{{ content.type }}">
+  <h2>{{ content.title }}</h2>
+  <p>{{ content.description }}</p>
+  <img *ngIf="content.imgURL;else defaultImage" class="image" src="{{ content.imgURL }}" (click)="imageText()"/><br>
+  By:<em> {{ content.creator }}</em>
+  <p>
+    <span appHoverAffect highlightType="tag" *ngFor="let tag of content.tags"  >
+      #{{ tag }}
+    </span>
+  </p>
+  <p appHoverAffect highlightType="type" >Type: {{ content.type }}</p>
+</div>
+<ng-template #defaultImage>
+  <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTH7YTA3QTv_fIpICd0iWkHlGTnyskKEUONQ&usqp=CAU" alt="Default image">
+</ng-template>
 
